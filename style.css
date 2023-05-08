@@ -115,6 +115,7 @@ h3 {
   position: fixed;
   top: 10px;
   left:auto;
+  right: auto;
   z-index: 99;
 }
 
