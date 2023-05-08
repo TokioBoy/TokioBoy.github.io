@@ -482,3 +482,28 @@ footer ul img {
   height: 2.8rem;
 }
 }
+
+@media (max-width: 500px) {
+  footer div img {
+    width: 20rem;
+    height: 5rem;
+  }
+  footer ul {
+   max-width: 520px;
+ }
+ footer ul img {
+   width: 1.8rem;
+   height: 1.8rem;
+ }
+ }
+
+ 
+@media (max-width: 400px) {
+  footer ul {
+   max-width: 520px;
+ }
+ footer ul img {
+   width: 1.3rem;
+   height: 1.3rem;
+ }
+ }
