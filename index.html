@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Future is Now</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet">
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+<header>
+  <div id="button_grid">
+    <button id="scroll_to_about">About</button>
+    <button id="scroll_to_timetable">Timetable</button>
+    <button id="scroll_to_location">Location</button>
+    <button id="scroll_to_registration">Apply</button>
+    <button id="scroll_to_contact">Contact</button>
+  </div>
+  <h1>The Future is Now</h1>
+  <h2>School of Media and IT Mini Conference in AI</h2>
+  <h3>26.5.2023 9:00am - 18:00pm</h3>
+</header>
+
+
+<main>
+  <section id="about" class = "inviewport">
+      <h2 id="about_title">About</h2>
+      <p id ="about_description">Explore the diverse applications of AI, the challenges and opportunities that come with its development, and how it can be leveraged to make a positive impact on society. We look forward to engaging in meaningful conversations that will further the progress of AI and its potential to shape the future.</p>
+  </section>
+
+
+  <section id="timetable">
+    <h2 id="timetable_title">Timetable</h2>
+    <div id="timetable_grid">
+    <div class="grid_item">
+      <h3>Doors open and registration</h3>
+      <p>8:00am - 9:00am</p>
+    </div>
+    <div>
+      <h3>Opening remarks</h3>
+      <p>9:00am - 9:30am</p>
+    </div>
+    <div>
+      <h3>Introduction to AI</h3>
+      <p>9:30am - 10:30am</p>
+      <p>Speaker: Mark Anderson</p>
+    </div>
+    <div>
+      <h3>AI Applications in Healthcare</h3>
+      <p>10:30am - 11:30am</p>
+      <p>Speaker: Sarah Johnson</p>
+    </div>
+    <div>
+      <h3>Workshop 1: Developing AI Algorithms</h3>
+      <p>11:30am - 12:30pm</p>
+    </div>
+    <div>
+      <h3>Lunch</h3>
+      <p>12:30pm - 1:30pm</p>
+    </div>
+    <div>
+      <h3>Machine Learning</h3>
+      <p>1:30pm - 2:30pm</p>
+      <p>Speaker: Jennifer Williams</p>
+    </div>
+    <div>
+      <h3>Natural Language Processing</h3>
+      <p>2:30pm - 3:30pm</p>
+      <p>Speaker: Andrew Smith</p>
+    </div>
+      <div>
+        <h3>Workshop 2: Implementing AI in Business</h3>
+        <p>3:30pm - 4:30pm</p>
+      </div>
+      <div>
+        <h3>AI and the Future</h3>
+        <p>4:30pm - 5:30pm</p>
+        <p>Speaker: Rebecca Jones</p>
+      </div>
+      <div>
+        <h3>Closing remarks and networking</h3>
+        <p>5:30pm - 6:00pm</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id = "location">
+    <h2 id="location_title">Where To Find Us?</h2>
+    <div id="location_map">
+    </div>
+  </section>
+
+
+  <section id="registration">
+    <h2 id="registration_title">Apply</h2>
+    <form>
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="you@email.com" required>
+        <button type="submit">Send</button>
+    </form>
+  </section>
+</main>
+
+<footer id="contact">
+    <div id="footer_logo_div">
+      <img src="media/footer/pcu_logo_1.png">
+    </div>
+    <div id = "footer_text_div">
+      <p>Prague City University</p>
+      <p>City Centre Campus</p>
+      <p>Hybernská 24, Praha 1, Czech Republic</p>
+    </div>
+  <ul>
+    <li><a href="https://www.facebook.com/PragueCityUniversity"><img src="media/footer/facebook_logo.png"></a></li>
+    <li><a href="https://www.instagram.com/praguecityuniversity/"><img src="media/footer/instagram_logo.png"></a></li>
+    <li><a href="https://twitter.com/PragueCityUni"><img src="media/footer/twitter_logo.png"></a></li>
+    <li><a href="https://www.linkedin.com/school/prague-city-university/"><img src="media/footer/linkedin_logo.svg"></a></li>
+    <li><a href="https://www.youtube.com/channel/UCtJM41jXN0JSVFM2pxuAzGw"><img src="media/footer/youtube_logo.png"></a></li>
+    <li><a href="https://www.youtube.com/channel/UCtJM41jXN0JSVFM2pxuAzGw"><img src="media/footer/flikr_logo.png"></a></li>
+  </ul>
+</footer>
+</body>
+</html>
