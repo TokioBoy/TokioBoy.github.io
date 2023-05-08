@@ -180,17 +180,6 @@ div>#scroll_to_about:hover,
    font-size: 10px;
   }
  }
-
- @media (max-width: 500px) {
-  #scroll_to_about,
-  #scroll_to_timetable,
-  #scroll_to_location,
-  #scroll_to_contact,
-  #scroll_to_registration {
-    font-size: 5px;
-   }
-  }
-
   ::-webkit-scrollbar {
     width: 9px;
   }
