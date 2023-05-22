@@ -12,13 +12,14 @@
 
 <body>
 <header>
-  <div id="button_grid">
-    <button id="scroll_to_about">About</button>
-    <button id="scroll_to_timetable">Timetable</button>
-    <button id="scroll_to_location">Location</button>
-    <button id="scroll_to_registration">Apply</button>
-    <button id="scroll_to_contact">Contact</button>
-  </div>
+    <ul id="nav_grid">
+      <li><a href="#about">About</a></li>
+      <li><a href="#timetable">Timetable</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#registration">Apply</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  
   <h1>The Future is Now</h1>
   <h2>School of Media and IT Mini Conference in AI</h2>
   <h3>26.5.2023 9:00am - 18:00pm</h3>
@@ -110,7 +111,7 @@
     <form>
         <input type="text" placeholder="Your name" required>
         <input type="email" placeholder="you@email.com" required>
-        <button type="submit">Send</button>
+        <button id="submit_button" type="submit">Send</button>
     </form>
   </section>
 </main>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* Importing the Roboto font from Google Fonts */
 
 *{
   box-sizing: border-box;
@@ -7,6 +8,7 @@
   list-style-type: none;
   text-decoration: none;
 }
+/* Resetting default styles for all elements */
   
 img {
     display: block;
@@ -14,15 +16,16 @@ img {
     height: 100%;
     object-fit: cover;
 }
+/* Styling for images */
 
 :root {
   scroll-behavior: smooth;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   --time: all 0.2s ease-out;
-  scroll-behavior: smooth;
   overflow-x: hidden;
 }
+/* Setting global CSS variables and styles */
 /* ----------------------------------------------------header---------------------------------------------------------------------- */
 header {
   height: 100vh;
@@ -36,6 +39,7 @@ header {
   flex-direction: column;
   overflow: hidden;
 }
+/* Styling for the header section */
 
 header::before {
   content: "";
@@ -53,6 +57,7 @@ header::before {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+/* Animated background for the header */
 
 @keyframes animation_header {
   0% {
@@ -72,6 +77,7 @@ header::before {
     transform: scale3d(1.3, 1.3, 1);
   }
 }
+/* Keyframes for header animation */
   
 h1 {
   color: #fff;
@@ -89,12 +95,14 @@ h2 {
     z-index: 99;
     margin-bottom: 10px;
 }
+
 h3 {
   color: #fff;
   font-weight: 200;
   font-size: 1.5rem;
   z-index: 99;
 }
+/* Styling for heading elements in the header */
 
 @media (max-width: 600px) {
  h1 {
@@ -107,8 +115,9 @@ h3 {
   font-size: 1.2rem;
  }
 }
+/* Media queries for responsive typography in the header */
 
-#button_grid {
+#nav_grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 5rem;
@@ -118,12 +127,9 @@ h3 {
   right: auto;
   z-index: 99;
 }
+/* Styling for navigation grid */
 
-#scroll_to_about,
-#scroll_to_timetable,
-#scroll_to_location,
-#scroll_to_contact,
-#scroll_to_registration {
+#nav_grid a {
   padding: 10px;
   background-color: transparent;
   color: #fff;
@@ -131,54 +137,45 @@ h3 {
   cursor: pointer;
   font-size: 24px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 5s00;
 }
-div>#scroll_to_about:hover,
-#scroll_to_timetable:hover,
-#scroll_to_location:hover,
-#scroll_to_contact:hover,
-#scroll_to_registration:hover {
+/* Styling for navigation links */
+
+
+#nav_grid a:hover{
   background-color: rgb(255, 255, 255,0.5);
   color: #000;
   transition: background-color 0.4s ease-out, color 0.4s ease-out;
 }
+/* Hover effect for navigation links */
 
 
 @media (max-width: 1200px) {
 
- #button_grid {
+ #nav_grid{
   grid-gap: 3rem;
  }
-#scroll_to_about,
-#scroll_to_timetable,
-#scroll_to_location,
-#scroll_to_contact,
-#scroll_to_registration {
+#nav_grid a{
   font-size: 17px;
  }
 }
+
 @media (max-width: 900px) {
 
-  #button_grid {
+  #nav_grid {
    grid-gap: 2rem;
   }
- #scroll_to_about,
- #scroll_to_timetable,
- #scroll_to_location,
- #scroll_to_contact,
- #scroll_to_registration {
+ #nav_grid a {
    font-size: 14px;
   }
  }
 
  @media (max-width: 700px) {
- #scroll_to_about,
- #scroll_to_timetable,
- #scroll_to_location,
- #scroll_to_contact,
- #scroll_to_registration {
+#nav_grid a{
    font-size: 10px;
   }
+/* Media queries for responsive typography in the navigation */
+
  }
   ::-webkit-scrollbar {
     width: 9px;
@@ -196,7 +193,8 @@ div>#scroll_to_about:hover,
   ::-webkit-scrollbar-button{
     background-color: #000;
   }
-  
+  /* Styling for the scrollbar */
+
 /* ---------------------------------------------------body----------------------------------------------------------------- */
 
 main {
@@ -208,6 +206,7 @@ main {
   background-attachment: fixed;
   overflow: hidden;
 }
+/* Styling for the main section */
 
 main::before {
   content: "";
@@ -225,6 +224,8 @@ main::before {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+/* Background animation for the main section */
+
 
 @keyframes animation_main {
   0% {
@@ -244,6 +245,7 @@ main::before {
     transform: scale3d(1.3, 1.3, 1);
   }
 }
+/* Keyframes for the background animation */
 
 
 section{
@@ -252,16 +254,21 @@ section{
   opacity: 0;
   transition: all 1.2s;
 }
+/* Styling for sections */
+
 
 section.inviewport {
   transform: translate(0, 1rem);
   opacity: 1;
   transition: all 1.2s;
 }
+/* Styling for sections that are in view */
+
 
 #about {
   padding: 50px;
 }
+
 
 #about_title,
 #timetable_title,
@@ -270,6 +277,8 @@ section.inviewport {
   font-size: 48px;
   font-weight:400;
 }
+/* Styling for the about section */
+
 
 p{
   color: #ffffff;
@@ -279,6 +288,8 @@ p{
   margin: 0 auto;
   font-weight:300;
 }
+/* Styling for paragraph elements */
+
 
 #timetable_title,
 #location_title,
@@ -307,6 +318,7 @@ p{
   font-size: 24px;
   font-weight: 200;
 }
+/* Styling for the timetable section and timetable elements */
 
 .speaker_name {
 text-decoration: underline;
@@ -338,6 +350,7 @@ text-decoration: underline;
   display: block;
   margin-top: 10px;
 }
+/* Styling for speakers in timetable section */
 
 #location {
   margin-top: 2rem;
@@ -347,6 +360,7 @@ text-decoration: underline;
   height: 100vh;
   margin: 1rem;
 }
+/* Styling for the map  */
 
 #marker {
   width: 64px;
@@ -355,12 +369,15 @@ text-decoration: underline;
   background-size: cover;
   cursor: pointer;
 }
+/* Styling for the marker on map */
 
 .popup{
   font-size: 12px;
   line-height: 1.3;
   font-weight:500;
 }
+/* Styling for popup message  */
+
 @media (max-width: 900px) {
 
   #location_map {
@@ -372,6 +389,7 @@ text-decoration: underline;
     height: 40px;
   }
 }
+/* Media queries for responsive typography in the map section*/
 
 #registration{
   margin-top: 2rem;
@@ -414,7 +432,7 @@ form {
   color: #2e616f;
 }
 
-button {
+#submit_button {
   font-size: 0.8rem;
   font-family: inherit;
   display: block;
@@ -429,9 +447,11 @@ button {
   letter-spacing: 1.3px;
 }
 
-button:hover {
+#submit_button:hover {
   background-color: #2e2e2e;
 }
+/* Styling for registration form  */
+
 @media (max-width: 900px) {
   form {
     flex-direction: column;
@@ -447,6 +467,7 @@ button:hover {
     margin-bottom: -1px;
   }
 }
+/* Media queries for responsive typography in the Apply section*/
 
 /* ----------------------------------------------------------footer---------------------------------------------------------------------------------------------- */
 
@@ -457,6 +478,7 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
+/* Styling for footer */
 
 #footer_text_div{
   margin: auto auto auto auto;
@@ -470,10 +492,12 @@ footer {
  font-size: 21px;
 }
 
+/* Styling for adress in footer*/
 footer div img {
   width: 30rem;
   height: 10rem;
 }
+/* Styling for logo in footer */
 
 footer ul {
   display: flex;
@@ -496,6 +520,7 @@ margin: 0.8rem;
 footer a:hover img {
   transform: scale(1.3);
 }
+/* Styling for social media links */
 
 
 @media (max-width: 1230px) {
@@ -532,7 +557,6 @@ footer ul img {
    height: 1.8rem;
  }
  }
-
  
 @media (max-width: 400px) {
   footer ul {
@@ -543,4 +567,6 @@ footer ul img {
    height: 1.3rem;
  }
  }
+
+ /* Media queries for responsive typography in the footer*/
 
