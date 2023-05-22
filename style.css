@@ -316,6 +316,7 @@ p{
 
 .speaker_name {
 text-decoration: underline;
+cursor: pointer;
 }
 
 .speaker_description{
