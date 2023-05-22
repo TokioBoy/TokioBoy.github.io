@@ -69,8 +69,9 @@ window.addEventListener('scroll', function () {
   marker.id = 'marker';
   
   let popup = new mapboxgl.Popup({offset: 70})
-  .setText('We Are Here!');
-  
+  .setHTML('Prague City University<br>City Centre Campus<br>Hybernská 24, Praha 1 Czech Republic')
+  .addClassName('popup');
+
   new mapboxgl.Marker(marker, {anchor: 'bottom'})
   .setLngLat(loc)
   .addTo(map)

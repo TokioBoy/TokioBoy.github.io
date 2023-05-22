@@ -356,6 +356,11 @@ text-decoration: underline;
   cursor: pointer;
 }
 
+.popup{
+  font-size: 12px;
+  line-height: 1.3;
+  font-weight:500;
+}
 @media (max-width: 900px) {
 
   #location_map {
