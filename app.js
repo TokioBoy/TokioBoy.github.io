@@ -1,13 +1,13 @@
-window.addEventListener("scroll", function () {
-    var articles = document.querySelectorAll("section");
+window.addEventListener('scroll', function () {
+    var articles = document.querySelectorAll('section');
     for (var i = 0; i < articles.length; i++) {
       var article = articles[i];
       var rect = article.getBoundingClientRect();
       var isInViewport = rect.top < window.innerHeight && rect.bottom > 0;
       if (isInViewport) {
-        article.classList.add("inviewport");
+        article.classList.add('inviewport');
       } else {
-        article.classList.remove("inviewport");
+        article.classList.remove('inviewport');
       }
     }
   });
@@ -69,7 +69,7 @@ window.addEventListener("scroll", function () {
   marker.id = 'marker';
   
   let popup = new mapboxgl.Popup({offset: 70})
-  .setText('div');
+  .setText('We Are Here!');
   
   new mapboxgl.Marker(marker, {anchor: 'bottom'})
   .setLngLat(loc)
