@@ -77,4 +77,10 @@ window.addEventListener("scroll", function () {
   .setPopup(popup);
   // ------------------------------------------------------------------------------------------------------------------------------------
 
-  
+  const speakers = document.querySelectorAll('.speaker');
+
+speakers.forEach((speaker) => {
+  speaker.addEventListener('click', () => {
+    speaker.classList.toggle('active');
+  });
+});
