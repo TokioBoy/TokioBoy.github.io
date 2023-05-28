@@ -215,7 +215,7 @@ main::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(media/background/header3.jpg);
+  background-image: url(media/background/header3.png);
   background-size: cover;
   background-position: center;
   will-change: transform;
